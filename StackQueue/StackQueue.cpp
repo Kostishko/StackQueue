@@ -37,8 +37,8 @@ int main()
             case  'a':
                 cout << "Give me a number: ";
                 int pushedNumber;
-                if(!(cin >> pushedNumber))
-                {
+                cin >> pushedNumber;
+
                     if (currentStack.push(pushedNumber))
                     {
                         cout << pushedNumber;
@@ -50,12 +50,7 @@ int main()
                         cout << pushedNumber;
                         cout << " didn't get into the stack.\n";
 
-                    }
-                }
-                else
-                {
-                    cout << "Please, give me a valid number. \n";
-                }
+                    }              
                 break;
             case 'r':
                 int poppedNumber;
